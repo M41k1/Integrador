@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro - Proyecto Medioambiental</title>
+    <link rel="stylesheet" href="../CSS/foro.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Eco Green</a></h1>
+        <nav>
+            <ul>
+                <li><a href="contaminacion.html">Basura y Contaminación</a></li>
+                <li><a href="agua.html">Cuidado del Agua</a></li>
+                <li><a href="areas_verdes.html">Áreas Verdes</a></li>
+                <li><a href="reciclaje.html">Reciclaje</a></li>
+                <li><a href="voluntariados.html">Voluntariados</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="foro">
+            <h2>Foro de Discusión</h2>
+            <p>Comparte tus ideas, experiencias y dudas sobre cómo mejorar el medio ambiente.</p>
+            
+            <!-- Lista de publicaciones -->
+            <section id="publicaciones">
+                <h3>Mensajes Recientes</h3>
+                <ul id="lista-mensajes">
+                    <li class="post">
+                        <div class="post-header">
+                            <span class="post-author">Ana</span>
+                            <span class="post-time">Hace 2 horas</span>
+                        </div>
+                        <p class="post-message">¡Me encanta la iniciativa! ¿Cuándo será el próximo voluntariado?</p>
+                        <div class="post-buttons">
+                            <button class="like-btn">👍 Me gusta</button>
+                            <button class="reply-btn">💬 Responder</button>
+                        </div>
+                    </li>
+                    <li class="post">
+                        <div class="post-header">
+                            <span class="post-author">Carlos</span>
+                            <span class="post-time">Hace 1 día</span>
+                        </div>
+                        <p class="post-message">Sería genial organizar una recolección de botellas plásticas en el parque.</p>
+                        <div class="post-buttons">
+                            <button class="like-btn">👍 Me gusta</button>
+                            <button class="reply-btn">💬 Responder</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Formulario para publicar un mensaje (opcional para más adelante) -->
+            <form id="formulario-publicacion">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+                </div>
+                
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+                </div>
+                
+                <button type="submit">Publicar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Eco Green. Todos los derechos reservados.</p>
+        <div class="footer-info">
+            <p><strong>Contacto:</strong></p>
+            <ul>
+                <li><strong>Email:</strong> contacto@ecogreen.com</li>
+                <li><strong>Teléfono:</strong> +51 123 456 789</li>
+                <li><strong>Ubicación:</strong> Calle Ficticia 123, Ica, Perú</li>
+            </ul>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1024px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook" width="40"></a>
+                <a href="https://twitter.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Twitter_Logo_2012.svg/1024px-Twitter_Logo_2012.svg.png" alt="Twitter" width="40"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/960px-Instagram_logo_2022.svg.png" alt="Instagram" width="40"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/LinkedIn_logo_2013.svg" alt="LinkedIn" width="40"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JS/foro.js"></script>
+</body>
+</html>

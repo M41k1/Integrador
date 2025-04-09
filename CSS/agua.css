@@ -1,0 +1,170 @@
+/* ----------------------- */
+/* RESET GENERAL Y TIPOGRAFÍA */
+/* ----------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4fdf4;
+    color: #333;
+  }
+  
+  /* ----------------------- */
+  /* HEADER */
+  /* ----------------------- */
+  header {
+    background: linear-gradient(90deg, #228B22, #006400);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  header h1 a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav {
+    margin-top: 15px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+  }
+  
+  nav ul li {
+    transition: transform 0.3s ease;
+  }
+  
+  nav ul li:hover {
+    transform: scale(1.1);
+  }
+  
+  nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* ----------------------- */
+  /* MAIN CONTENT */
+  /* ----------------------- */
+  main {
+    padding: 40px 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #01579B;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #64DD17;
+    padding-bottom: 10px;
+  }
+  
+  p, ul {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  ul {
+    margin-left: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+  
+  /* ----------------------- */
+  /* FOOTER */
+  
+footer {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 5px solid #28a745;
+  }
+  
+  .footer-info {
+    margin-top: 20px;
+  }
+  
+  .footer-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-info li {
+    margin: 5px 0;
+  }
+  
+  .social-media {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-media a img {
+    transition: filter 0.3s, transform 0.3s;
+  }
+  
+  .social-media a img:hover {
+    filter: none;
+    transform: scale(1.1);
+  }
+  
+  
+  /* ----------------------- */
+  /* RESPONSIVE */
+  /* ----------------------- */
+  @media screen and (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    p, ul {
+      font-size: 14px;
+    }
+  }
+  
