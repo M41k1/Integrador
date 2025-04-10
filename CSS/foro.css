@@ -1,3 +1,6 @@
+/* ----------------------- */
+/* RESET GENERAL Y TIPOGRAFÍA */
+/* ----------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -6,51 +9,82 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #e0f7fa;
-    color: #333;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Light grey background */
+    color: #343a40; /* Dark grey text */
 }
 
+/* ----------------------- */
+/* HEADER - Minimalista Innovador (Paleta Azul y Verde) */
+/* ----------------------- */
 header {
-    background-color: #01579B;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    position: relative;
+    background-color: #ffffff; /* Clean white background */
+    padding: 20px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #28a745; /* Primary blue color */
+    margin: 0;
 }
 
-header a {
-    color: #64DD17;
+header h1 a {
+    color: inherit; /* Inherit color from h1 */
     text-decoration: none;
-    font-size: 24px;
+    font-size: inherit;
     font-weight: bold;
 }
 
-header nav ul {
-    list-style-type: none;
-    padding-top: 20px;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
-header nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+nav ul li {
+    margin-left: 25px;
 }
 
-header nav ul li a {
-    color: #fff;
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
     text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
+    color: #495057; /* Secondary grey color */
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+    padding: 8px 0; /* Less padding for a cleaner look */
+    position: relative; /* For the hover effect */
 }
 
-header nav ul li a:hover {
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #64DD17; /* Highlight green color on hover */
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
     color: #64DD17;
 }
 
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+/* ----------------------- */
+/* MAIN CONTENT */
+/* ----------------------- */
 main {
     padding: 40px 20px;
 }
@@ -69,7 +103,7 @@ h2 {
     color: #01579B;
     margin-bottom: 20px;
     text-align: center;
-    border-bottom: 3px solid #64DD17;
+    border-bottom: 2px solid #64DD17; /* Updated border color */
     padding-bottom: 10px;
 }
 
@@ -80,7 +114,7 @@ form {
 
 label {
     font-size: 16px;
-    color: #333;
+    color: #343a40; /* Dark grey text */
 }
 
 input, textarea {
@@ -88,10 +122,10 @@ input, textarea {
     padding: 10px;
     margin-top: 8px;
     margin-bottom: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #ced4da; /* Light grey border */
     border-radius: 4px;
     font-size: 16px;
-    color: #333;
+    color: #343a40; /* Dark grey text */
     transition: border-color 0.3s ease;
 }
 
@@ -129,27 +163,31 @@ button:hover {
 
 #lista-mensajes {
     list-style-type: none;
+    padding-left: 0; /* Remove default list padding */
 }
 
 #lista-mensajes li {
-    background-color: #f1f1f1;
+    background-color: #f8f9fa; /* Light grey background */
     margin-bottom: 15px;
-    padding: 10px;
+    padding: 15px; /* Increased padding for better readability */
     border-radius: 6px;
     font-size: 16px;
+    border: 1px solid #e0e0e0; /* Light grey border */
 }
 
 #lista-mensajes li strong {
     color: #01579B;
+    font-weight: bold; /* Make the username bold */
 }
 
 footer {
-    background-color: #1c1c1c;
-    color: #f0f0f0;
+    background-color: #343a40; /* Dark grey background */
+    color: #f8f9fa; /* Light grey text */
     padding: 30px 20px;
     text-align: center;
+    font-size: 14px;
     margin-top: 40px;
-    border-top: 5px solid #28a745;
+    border-top: 5px solid #64DD17; /* Primary green border */
 }
 
 .footer-info {
@@ -174,21 +212,42 @@ footer {
 
 .social-media a img {
     transition: filter 0.3s, transform 0.3s;
+    opacity: 0.7;
+    width: 30px;
+    height: auto;
 }
 
 .social-media a img:hover {
     filter: none;
     transform: scale(1.1);
+    opacity: 1;
 }
 
 @media screen and (max-width: 768px) {
-    header h1 {
-        font-size: 28px;
+    header {
+        flex-direction: column;
+        align-items: center;
     }
 
-    header nav ul li {
+    header h1 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul li {
         display: block;
         margin: 10px 0;
+        margin-left: 0; /* Reset left margin */
+    }
+
+    nav ul li a {
+        padding: 10px 0;
     }
 
     h2 {
@@ -202,12 +261,18 @@ footer {
     button {
         width: 100%;
     }
+
+    #lista-mensajes li {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
 }
 
 .post-buttons {
     margin-top: 10px;
     display: flex;
-    gap: 20px;
+    gap: 10px; /* Adjust gap for smaller screens */
+    flex-direction: column; /* Stack buttons on smaller screens */
+    align-items: flex-start; /* Align buttons to the left */
 }
 
 .like-btn, .reply-btn {
@@ -216,10 +281,11 @@ footer {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #4CAF50;
+    background-color: #64DD17; /* Primary green */
     color: white;
+    margin-bottom: 5px; /* Add some space between stacked buttons */
 }
 
 .like-btn:hover, .reply-btn:hover {
-    background-color: #45a049;
+    background-color: #558B2F;
 }
