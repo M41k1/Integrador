@@ -7,18 +7,14 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background-color: #f8f9fa; /* Light grey background */
-  color: #343a40; /* Dark grey text */
+  background-color: #f8f9fa;
+  color: #343a40;
 }
 
-/* ----------------------- */
-/* ENCABEZADO - Minimalista Innovador */
-/* ----------------------- */
-
 header {
-  background-color: #ffffff; /* Clean white background */
+  background-color: #ffffff;
   padding: 20px 30px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,13 +22,13 @@ header {
 
 header h1 {
   font-size: 2rem;
-  color: #28a745; /* Primary green color */
+  color: #28a745;
   margin: 0;
 }
 
 header h1 a {
   text-decoration: none;
-  color: inherit; /* Inherit color from h1 */
+  color: inherit;
 }
 
 nav ul {
@@ -52,11 +48,11 @@ nav ul li:first-child {
 
 nav ul li a {
   text-decoration: none;
-  color: #495057; /* Secondary grey color */
+  color: #495057;
   font-weight: 500;
   transition: color 0.3s ease-in-out;
-  padding: 8px 0; /* Less padding for a cleaner look */
-  position: relative; /* For the hover effect */
+  padding: 8px 0;
+  position: relative;
 }
 
 nav ul li a::before {
@@ -66,7 +62,7 @@ nav ul li a::before {
   left: 0;
   width: 0%;
   height: 2px;
-  background-color: #28a745; /* Highlight color on hover */
+  background-color: #28a745;
   transition: width 0.3s ease-in-out;
 }
 
@@ -77,10 +73,6 @@ nav ul li a:hover {
 nav ul li a:hover::before {
   width: 100%;
 }
-
-/* ----------------------- */
-/* RESTO DEL CSS (sin modificar el pie de página y responsive para mantener la coherencia) */
-/* ----------------------- */
 
 main {
   padding: 40px 20px;
@@ -102,14 +94,7 @@ main {
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
-#mision-vision h2 {
-  font-size: 28px;
-  color: #28a745;
-  text-align: center;
-  border-bottom: 2px solid #28a745;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
+
 #inicio p {
   font-size: 18px;
   line-height: 1.6;
@@ -122,6 +107,15 @@ main {
   flex-direction: column;
   gap: 40px;
   margin-bottom: 40px;
+}
+
+#mision-vision h2 {
+  font-size: 28px;
+  color: #28a745;
+  text-align: center;
+  border-bottom: 2px solid #28a745;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .vision, .mision {
@@ -191,6 +185,20 @@ main {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+#galeria-eventos .carousel {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#galeria-eventos .carousel img {
+  height: 400px;
+  object-fit: cover;
+}
+
 .footer-info {
   margin-top: 20px;
 }
@@ -214,15 +222,16 @@ main {
 .social-media a img {
   transition: filter 0.3s, transform 0.3s;
   opacity: 0.7;
-  width: 30px; /* Adjust size as needed */
+  width: 30px;
   height: auto;
 }
 
 .social-media a img:hover {
-  filter: none; /* Remove grayscale on hover */
+  filter: none;
   transform: scale(1.1);
   opacity: 1;
 }
+
 footer {
   background-color: #343a40;
   color: #ffffff;
@@ -234,39 +243,43 @@ footer {
 
 @media (max-width: 768px) {
   header {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   header h1 {
-      margin-bottom: 15px;
+    margin-bottom: 15px;
   }
 
   nav ul {
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 
   nav ul li {
-      margin-left: 0;
+    margin-left: 0;
   }
 
   nav ul li a {
-      padding: 10px 0;
+    padding: 10px 0;
+  }
+
+  .vision, .mision {
+    flex-direction: column;
+  }
+
+  .vision img, .mision img,
+  .vision .text, .mision .text {
+    width: 100%;
+  }
+
+  #galeria-eventos .imagenes img {
+    width: 100%;
+    height: auto;
+  }
+
+  #galeria-eventos .carousel img {
+    height: 250px;
   }
 }
-
-#galeria-eventos .carousel {
-  max-width: 800px;
-  margin: 0 auto;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-#galeria-eventos .carousel img {
-  height: 400px;
-  object-fit: cover;
-}
-

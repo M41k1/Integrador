@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -8,15 +7,14 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background-color: #f8f9fa; /* Light grey background */
-    color: #343a40; /* Dark grey text */
+    background-color: #f8f9fa;
+    color: #343a40;
 }
 
-
 header {
-    background-color: #ffffff; /* Clean white background */
+    background-color: #ffffff;
     padding: 20px 30px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,12 +22,12 @@ header {
 
 header h1 {
     font-size: 2rem;
-    color: #28a745; /* Primary green color */
+    color: #28a745;
     margin: 0;
 }
 
 header h1 a {
-    color: inherit; /* Inherit color from h1 */
+    color: inherit;
     text-decoration: none;
     font-size: inherit;
     font-weight: bold;
@@ -52,11 +50,11 @@ nav ul li:first-child {
 
 nav ul li a {
     text-decoration: none;
-    color: #495057; /* Secondary grey color */
+    color: #495057;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
-    padding: 8px 0; /* Less padding for a cleaner look */
-    position: relative; /* For the hover effect */
+    padding: 8px 0;
+    position: relative;
 }
 
 nav ul li a::before {
@@ -66,7 +64,7 @@ nav ul li a::before {
     left: 0;
     width: 0%;
     height: 2px;
-    background-color: #64DD17; /* Highlight green color on hover */
+    background-color: #64DD17;
     transition: width 0.3s ease-in-out;
 }
 
@@ -96,13 +94,13 @@ main {
     color: #01579B;
     margin-bottom: 20px;
     text-align: center;
-    border-bottom: 2px solid #64DD17; /* Updated border color */
+    border-bottom: 2px solid #64DD17;
     padding-bottom: 10px;
 }
 
 form label {
     font-size: 16px;
-    color: #01579B; /* Dark grey text */
+    color: #01579B;
     margin-top: 10px;
     display: block;
 }
@@ -111,10 +109,10 @@ form input, form textarea {
     width: 100%;
     padding: 10px;
     margin-top: 8px;
-    border: 1px solid #ced4da; /* Light grey border */
+    border: 1px solid #ced4da;
     border-radius: 4px;
     font-size: 16px;
-    color: #343a40; /* Dark grey text */
+    color: #343a40;
 }
 
 form button {
@@ -162,7 +160,7 @@ form button:hover {
 #eventos p {
     font-size: 16px;
     margin: 10px 0;
-    color: #343a40; /* Dark grey text */
+    color: #343a40;
 }
 
 #eventos button {
@@ -183,81 +181,50 @@ form button:hover {
 #galeria-eventos {
     text-align: center;
     margin-bottom: 40px;
-  }
-  
-  #galeria-eventos h2 {
+    margin-top: 40px;
+}
+
+#galeria-eventos h2 {
     font-size: 28px;
     color: #28a745;
     margin-bottom: 20px;
-    text-align: center;
     border-bottom: 2px solid #28a745;
     padding-bottom: 10px;
-  }
-  
-  #galeria-eventos p {
+}
+
+#galeria-eventos p {
     font-size: 18px;
     line-height: 1.6;
     color: #333;
     margin-bottom: 20px;
-  }
-  
-  #galeria-eventos .imagenes {
+}
+
+#galeria-eventos .imagenes {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-  }
-  
-  #galeria-eventos .imagenes img {
+}
+
+#galeria-eventos .imagenes img {
     width: 300px;
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  
-  
-  .footer-info {
-    margin-top: 20px;
-  }
-  
-  .footer-info ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-info li {
-    margin: 5px 0;
-  }
-  
-  .social-media {
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .social-media a img {
-    transition: filter 0.3s, transform 0.3s;
-    opacity: 0.7;
-    width: 30px; /* Adjust size as needed */
-    height: auto;
-  }
-  
-  .social-media a img:hover {
-    filter: none; /* Remove grayscale on hover */
-    transform: scale(1.1);
-    opacity: 1;
-  }
-footer {
-    background-color: #343a40; /* Dark grey background */
-    color: #f8f9fa; /* Light grey text */
-    padding: 30px 20px;
-    text-align: center;
-    font-size: 14px;
-    margin-top: 40px;
-    border-top: 5px solid #64DD17; /* Primary green border */
+}
+
+#galeria-eventos .carousel {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#galeria-eventos .carousel img {
+    height: 400px;
+    object-fit: cover;
 }
 
 .footer-info {
@@ -272,76 +239,68 @@ footer {
 .footer-info li {
     margin: 5px 0;
 }
-/* ... (resto de tu CSS) ... */
 
-#galeria-eventos {
+.social-media {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media a img {
+    transition: filter 0.3s, transform 0.3s;
+    opacity: 0.7;
+    width: 30px;
+    height: auto;
+}
+
+.social-media a img:hover {
+    filter: none;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 14px;
     margin-top: 40px;
-    text-align: center;
+    border-top: 5px solid #64DD17;
 }
-
-#galeria-eventos h2 {
-    font-size: 28px;
-    color: #28a745; /* Ajustado al color primario del encabezado */
-    margin-bottom: 20px;
-    text-align: center;
-    border-bottom: 2px solid #28a745; /* Ajustado al color primario del encabezado */
-    padding-bottom: 10px;
-}
-
-#galeria-eventos p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-#galeria-eventos .carousel {
-    max-width: 800px; /* Ancho máximo del carrusel */
-    margin: 0 auto; /* Centra el carrusel horizontalmente */
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-#galeria-eventos .carousel img {
-    height: 400px; /* Altura de las imágenes del carrusel */
-    object-fit: cover; /* Cubre el espacio manteniendo la proporción */
-}
-
-/* ... (resto de tu CSS) ... */
 
 @media (max-width: 768px) {
-    #galeria-eventos .carousel {
-        max-width: 95%; /* Ocupa más ancho en pantallas pequeñas */
-        height: auto; /* La altura se ajusta al contenido */
-    }
-
-    #galeria-eventos .carousel img {
-        height: auto; /* La altura se ajusta al contenido */
-        max-height: 300px; /* Altura máxima para evitar que sea demasiado grande */
-    }
-}@media (max-width: 768px) {
     header {
         flex-direction: column;
         align-items: center;
     }
-  
+
     header h1 {
         margin-bottom: 15px;
     }
-  
+
     nav ul {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
-  
+
     nav ul li {
         margin-left: 0;
     }
-  
+
     nav ul li a {
         padding: 10px 0;
     }
-  }
-  
+
+    #galeria-eventos .carousel {
+        max-width: 95%;
+        height: auto;
+    }
+
+    #galeria-eventos .carousel img {
+        height: auto;
+        max-height: 300px;
+    }
+}
