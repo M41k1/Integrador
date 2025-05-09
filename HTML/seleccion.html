@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selecciona tu tipo de usuario</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e7f5e7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      color: #2e7d32;
+    }
+
+    .opciones {
+      display: flex;
+      gap: 40px;
+    }
+
+    .opcion {
+      padding: 20px 40px;
+      border: none;
+      border-radius: 10px;
+      background-color: #4caf50;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .opcion:hover {
+      background-color: #388e3c;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>¿Cómo deseas registrarte?</h1>
+
+  <div class="opciones">
+    <!-- 🔧 Aquí puedes cambiar la ruta del archivo del formulario -->
+    <button class="opcion" onclick="window.location.href='../html/login.html'">
+      👤 Usuario Común
+    </button>
+
+    <button class="opcion" onclick="window.location.href='../html/login_e.html'">
+      🧑‍🌾 Emprendedor
+    </button>
+  </div>
+
+</body>
+</html>

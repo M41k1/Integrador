@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard de Reciclaje</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/dash.css" />
+
+
+</head>
+<body>
+  <h1><a href="emprendedor.html">Eco Green</a></h1>
+
+  <div class="dashboard-container">
+    <h1>Dashboard de Reciclaje</h1>
+
+    <div class="chart-container">
+      <canvas id="graficoReciclaje"></canvas>
+    </div>
+
+    <div class="resumen" id="resumenReciclaje">
+      Total reciclado esta semana: 45 kg
+    </div>
+
+    <button class="descargar-btn">📄 Descargar Reporte Mensual</button>
+
+    <div class="historial-container">
+      <h2>Historial de Reciclaje (Últimas 3 Semanas)</h2>
+      <table class="historial">
+        <thead>
+          <tr>
+            <th>Semana</th>
+            <th>Kg Reciclados</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>21 - 27 Abr</td>
+            <td>32 kg</td>
+          </tr>
+          <tr class="semana-meta">
+            <td>14 - 20 Abr</td>
+            <td>45 kg ✅</td>
+          </tr>
+          <tr>
+            <td>7 - 13 Abr</td>
+            <td>28 kg</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="..//JS/dash.js"></script>
+</body>
+</html>
