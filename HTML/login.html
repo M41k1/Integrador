@@ -5,8 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../CSS/login.css" />
-  <link rel="stylesheet" href="../IMG/fondo_verde_planta.jpg" />
-  <title>Login / Registro</title>
+    <title>Login / Registro</title>
 </head>
 <body>
   <div class="box">
@@ -34,7 +33,7 @@
             <label for="check"> Recordarme</label>
           </div>
           <div class="right">
-            <label><a href="#">¿Olvidaste la contra?</a></label>
+            <label><a href="#">¿Olvidaste la Contraseña</a></label>
           </div>
         </div>
       </form>
@@ -53,10 +52,20 @@
           <input type="text" class="input" placeholder="Nombre de usuario" required />
           <i class="bx bx-user"></i>
         </div>
-        <div class="input-field">
-          <input type="password" class="input" placeholder="Contraseña" required />
-          <i class="bx bx-lock-alt"></i>
-        </div>
+        <div class="input-field" style="position: relative;">
+  <input type="password" class="input" placeholder="Contraseña" id="register-password" required />
+  <i class="bx bx-lock-alt"></i>
+  <!-- Ojito -->
+  <span id="toggle-password" style="position: absolute; right: 10px; top: 10px; cursor: pointer;">👁️</span>
+</div>
+
+<!-- Lista de validaciones -->
+<ul id="password-rules" style="text-align: left; font-size: 0.9em; margin-top: 5px; padding-left: 15px;">
+  <li id="rule-length">🔴 Mínimo 8 caracteres</li>
+  <li id="rule-uppercase">🔴 Al menos una mayúscula</li>
+  <li id="rule-number">🔴 Al menos un número</li>
+  <li id="rule-special">🔴 Al menos un carácter especial (!@#$...)</li>
+</ul>
         <div class="input-field">
           <input type="submit" class="submit" value="Crear Cuenta" />
         </div>
@@ -64,12 +73,14 @@
 
       <div class="bottom" style="justify-content: center;">
         <label>
-          <a href="#" id="toggle-link">¿No tienes cuenta? Crear una cuenta</a>
+          <a href="#" id="toggle-link">¿No tienes cuenta? Crear cuenta</a>
         </label>
       </div>
     </div>
   </div>
 
   <script src="../JS/login.js"></script>
+  <script src="../JS/password.js"></script>
+
 </body>
 </html>
