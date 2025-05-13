@@ -5,8 +5,6 @@
   <title>Dashboard de Reciclaje</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../CSS/dash.css" />
-
-
 </head>
 <body>
   <h1><a href="emprendedor.html">Eco Green</a></h1>
@@ -48,10 +46,18 @@
           </tr>
         </tbody>
       </table>
+
+      <div class="semana-selector">
+        <label for="semanaInput">Selecciona una semana para ver registros:</label>
+        <input type="week" id="semanaInput">
+<button id="mostrarSemana">Buscar</button>
+        <p id="resultadoSemana"></p>
+      </div>
     </div>
   </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="..//JS/dash.js"></script>
+  <script src="../JS/dash.js"></script>
 </body>
 </html>

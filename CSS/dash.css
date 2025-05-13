@@ -1,10 +1,8 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 body {
   font-family: 'Inter', sans-serif;
@@ -42,7 +40,6 @@ h1 {
   color: #1b5e20;
 }
 
-/* NUEVO: Estilos para historial */
 .historial-container {
   margin-top: 3rem;
 }
@@ -85,4 +82,41 @@ table.historial {
 
 .descargar-btn:hover {
   background-color: #256a3c;
+}
+
+/* Estilos del selector de semana */
+.semana-selector {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.semana-selector label {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.semana-selector input {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: 'Inter', sans-serif;
+}
+
+.semana-selector button {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2e7d32;
+  color: white;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.semana-selector button:hover {
+  background-color: #256a3c;
+}
+
+#resultadoSemana {
+  margin-top: 10px;
+  font-weight: 500;
 }
