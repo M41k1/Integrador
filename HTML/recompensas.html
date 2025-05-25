@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mis Recompensas</title>
+  <link rel="stylesheet" href="../CSS/recompensas.css" />
+</head>
+<body>
+  <div class="container">
+        <h1><a href="index.html">Eco Green</a></h1>
+
+    <h1>🎁 Mis Recompensas</h1>
+    <div id="recompensas-container"></div>
+  </div>
+
+  <script>
+  
+
+    // Simulación de recompensas (puedes reemplazar esto por una consulta al backend)
+    const recompensas = [
+      { codigo: "ECO-12345", vigencia: "Hasta 30/06/2025" },
+      { codigo: "VERDE-67890", vigencia: "Hasta 15/07/2025" }
+    ];
+
+    const container = document.getElementById("recompensas-container");
+
+    recompensas.forEach(r => {
+      const card = document.createElement("div");
+      card.classList.add("recompensa-card");
+      card.innerHTML = `
+        <h2>Código: <span>${r.codigo}</span></h2>
+        <p>⏳ Vigente: <strong>${r.vigencia}</strong></p>
+      `;
+      container.appendChild(card);
+    });
+  </script>
+</body>
+</html>

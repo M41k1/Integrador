@@ -1,0 +1,68 @@
+/* Estilo pro 💎 */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e6f2e6, #c9e4ca);
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #2e7d32;
+}
+
+#recompensas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.recompensa-card {
+  background-color: white;
+  border: 2px solid #81c784;
+  border-radius: 16px;
+  padding: 25px;
+  width: 280px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recompensa-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.recompensa-card h2 {
+  color: #388e3c;
+  margin-bottom: 10px;
+}
+
+.recompensa-card span {
+  font-weight: bold;
+  color: #1b5e20;
+}
+
+.recompensa-card p {
+  margin: 0;
+  font-size: 1.1em;
+  color: #4e4e4e;
+}
+
+@media (max-width: 600px) {
+  .recompensa-card {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+}

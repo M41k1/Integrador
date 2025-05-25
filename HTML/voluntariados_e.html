@@ -13,12 +13,12 @@
 <body>
     <header>
         <h1><a href="emprendedor.html">Eco Green</a></h1>
-        <h1>Voluntariados</h1>
+        <h1>Eventos</h1>
         <nav>
             <ul>
 
                 <li><a href="foro_e.html">Foro</a></li>
-                <li><a href="dash.html">Dashboard</a></li>
+                <li><a href="dash.html">Reporte</a></li>
                 <li><a href="login.html">Iniciar Sesión / Crear Cuenta</a></li>
               </ul>
         </nav>
@@ -47,8 +47,52 @@
                 <button>Ver Ubicación</button>
             </article>
         </section>
-        
+        <form id="form-incentivo" style="max-width: 500px; margin: auto;">
+  <!-- Nombre del incentivo -->
+  <label for="nombre">Nombre del Incentivo:</label>
+  <input type="text" id="nombre" name="nombre" placeholder="Ej: Cupón de descuento" required>
 
+  <!-- Tipo de incentivo (lista desplegable) -->
+  <label for="tipo">Tipo de Incentivo:</label>
+  <select id="tipo" name="tipo" required>
+    <option value="">-- Selecciona un tipo --</option>
+    <option value="descuento">Descuento</option>
+    <option value="producto">Producto</option>
+    <option value="entrada">Entrada a evento</option>
+    <option value="otro">Otro</option>
+  </select>
+
+  <!-- Condiciones de canje -->
+  <label for="condiciones">Condiciones de Canje:</label>
+  <input type="text" id="condiciones" name="condiciones" placeholder="Ej: 1 cupón por cada 10 botellas" required>
+
+  <!-- Evento al que pertenece -->
+  <label for="evento">Evento Asociado:</label>
+  <select id="evento" name="evento" required>
+    <option value="">-- Selecciona un evento --</option>
+    <option value="limpieza_parque">Campaña: Limpieza del parque</option>
+    <option value="reciclaje_escuela">Concurso de reciclaje escolar</option>
+    <option value="forestacion_distrito">Forestación distrital</option>
+    <!-- Agrega dinámicamente los eventos desde la BD si quieres -->
+  </select>
+
+  <!-- Vigencia -->
+  <label for="vigencia">Vigencia del Incentivo:</label>
+  <input type="date" id="vigencia" name="vigencia" required>
+
+  <!-- Restricciones -->
+  <label for="restricciones">Restricciones:</label>
+  <textarea id="restricciones" name="restricciones" placeholder="Ej: Solo canjeable una vez por persona"></textarea>
+
+  <!-- Cantidad disponible -->
+  <label for="cantidad">Cantidad Disponible:</label>
+  <input type="number" id="cantidad" name="cantidad" min="1" required>
+
+  <!-- Botón -->
+  <button type="submit">Guardar Incentivo</button>
+</form>
+
+<!--
         <section id="crear-evento">
             <h2>Crear un Nuevo Evento</h2>
             <form>
@@ -73,7 +117,7 @@
                 <button type="submit">Crear Evento</button>
             </form>
         </section>
-
+      -->
         <section id="galeria-eventos">
             <h2>Eventos Destacados</h2>
             <p>A lo largo del año realizamos diversas actividades en favor del medio ambiente. Aquí puedes ver imágenes de algunos de nuestros eventos más recientes.</p>

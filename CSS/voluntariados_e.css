@@ -79,6 +79,33 @@ nav ul li a:hover::before {
 main {
     padding: 40px 20px;
 }
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+form button {
+  margin-top: 20px;
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #218838;
+}
 
 #crear-evento {
     background-color: #ffffff;
